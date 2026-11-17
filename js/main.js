@@ -2,13 +2,13 @@
    CONFIGURAÇÃO DA LOJA — troque os dados abaixo
    ========================================================= */
 const LOJA = {
-  whatsapp: "5583900000000",            // DDI + DDD + número, só dígitos
-  telefoneExibicao: "(83) 9 0000-0000",
-  instagram: "https://instagram.com/",  // perfil da loja
-  googleAvaliacao: "https://www.google.com/search?q=Ivan+Motos", // trocar pelo link "Pedir avaliações" do Perfil da Empresa no Google
-  endereco: "Endereço da loja — Cidade/PB",
-  mapsLink: "https://www.google.com/maps/search/?api=1&query=Ivan+Motos",
-  mapsEmbed: "",  // ao hospedar: cole aqui o link src do "Incorporar um mapa" do Google Maps
+  whatsapp: "5583999648719",            // DDI + DDD + número, só dígitos
+  telefoneExibicao: "(83) 9 9964-8719",
+  instagram: "https://instagram.com/ivanmotos95/",  // perfil da loja
+  googleAvaliacao: "https://www.google.com/search?q=Ivan+Motos+Pianc%C3%B3", // trocar pelo link "Pedir avaliações" do Perfil da Empresa no Google
+  endereco: "Av. Gov. Ernâni Sátiro, Piancó - PB, 58765-000",
+  mapsLink: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Ivan Motos, Av. Gov. Ernâni Sátiro, Piancó - PB, 58765-000"),
+  mapsEmbed: "https://maps.google.com/maps?q=" + encodeURIComponent("Av. Gov. Ernâni Sátiro, Piancó - PB, 58765-000") + "&z=16&output=embed",  // mapa da seção Localização
   horarios: [["Seg a Sex","08h às 18h"],["Sábado","08h às 12h"]]
 };
 
