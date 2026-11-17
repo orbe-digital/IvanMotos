@@ -60,6 +60,16 @@ const textoParaB64 = t => bytesParaB64(new TextEncoder().encode(t));
 const b64ParaTexto = b => new TextDecoder().decode(b64ParaBytes(b));
 const slug = t => String(t).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40) || 'foto';
 const urlFoto = p => S.fotosNovas.get(p)?.url || S.previas.get(p) || '../' + p;
+const urlRepo = p => `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/${p}`;
+
+/* Foto ainda não está nesta cópia do site (ex.: recém-publicada ou rodando local):
+   busca direto no repositório. */
+document.addEventListener('error', e => {
+  const img = e.target;
+  if (img.tagName !== 'IMG' || !img.dataset.caminho || img.dataset.tentouRepo) return;
+  img.dataset.tentouRepo = '1';
+  img.src = urlRepo(img.dataset.caminho);
+}, true);
 
 let toastTimer;
 function toast(msg, tipo = 'ok', ms = 3500) {
@@ -244,7 +254,7 @@ function render() {
   $('#dica').textContent = t.dica;
   $('#lista').innerHTML = lista.length ? lista.map((it, i) => `
     <div class="item ${tipo}">
-      ${it.foto ? `<img src="${esc(urlFoto(it.foto))}" alt="">` : '<div class="sem"></div>'}
+      ${it.foto ? `<img src="${esc(urlFoto(it.foto))}" data-caminho="${esc(it.foto)}" alt="">` : '<div class="sem"></div>'}
       <div><h3>${esc(it.nome)}</h3><p>${t.resumo(it)}</p></div>
       <div class="item-acoes">
         <button class="ico" data-acao="subir" data-i="${i}" title="Mover para cima" ${i === 0 ? 'disabled' : ''}>↑</button>
@@ -282,7 +292,7 @@ function abrirForm(i) {
   $('#dlg-titulo').textContent = (i === null ? 'Adicionar ' : 'Editar ') + t.singular;
   $('#form-erro').textContent = '';
   $('#foto-input').value = '';
-  mostrarPrevia(item.foto ? urlFoto(item.foto) : null);
+  mostrarPrevia(item.foto ? urlFoto(item.foto) : null, item.foto);
   $('#campos').innerHTML = t.campos.map(c => {
     const v = item[c.k] ?? c.padrao ?? '';
     const ctrl = c.ops
@@ -293,8 +303,8 @@ function abrirForm(i) {
   $('#dlg').showModal();
 }
 
-function mostrarPrevia(url) {
-  $('#foto-prev').innerHTML = url ? `<img src="${esc(url)}" alt="">` : '<span>Sem foto</span>';
+function mostrarPrevia(url, caminho = '') {
+  $('#foto-prev').innerHTML = url ? `<img src="${esc(url)}" data-caminho="${esc(caminho)}" alt="">` : '<span>Sem foto</span>';
 }
 
 /* Reduz e converte a foto para WebP antes de enviar. */

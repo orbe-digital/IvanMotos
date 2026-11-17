@@ -40,7 +40,7 @@ input:focus,select:focus{border-color:var(--orange)}
 .abas{display:flex;gap:6px;background:var(--card);padding:5px;border-radius:999px;border:1px solid var(--line);flex-wrap:wrap}
 .abas button{border:0;background:transparent;color:var(--muted);font:700 14px/1 var(--head);padding:11px 16px;border-radius:999px;cursor:pointer}
 .abas button.on{background:var(--orange);color:#fff}
-.abas span{opacity:.75;font-weight:600}
+.abas .n{opacity:.75;font-weight:600}
 .dica{color:var(--muted);font-size:14px;margin:16px 0}
 
 .lista{display:grid;gap:12px}
@@ -83,9 +83,38 @@ dialog h2{font:800 20px/1.2 var(--head)}
 .toast.err{border-color:var(--red)}
 
 @media (max-width:640px){
-  .item,.item.clientes{grid-template-columns:72px 1fr}
-  .item-acoes{grid-column:1/-1;justify-content:flex-start}
+  /* Topo compacto */
+  .topo{padding:12px 16px;gap:10px}
+  .topo-logo{height:28px}
+  .topo-dir{gap:12px}
+  .ola{display:none}
+  .topo .btn{padding:9px 14px}
+
+  /* Abas lado a lado ocupando a largura; botão de adicionar embaixo */
+  .conteudo{padding:20px 16px 150px}
+  .barra{display:grid;gap:12px;justify-content:stretch}
+  .abas{display:grid;grid-template-columns:1fr 1fr;flex-wrap:nowrap}
+  .abas button{padding:11px 8px;text-transform:capitalize}
+  .abas .longo{display:none}
+  #adicionar{width:100%;padding:14px 20px}
+
+  /* Itens: foto + texto em cima, ações embaixo */
+  .item,.item.clientes{grid-template-columns:72px 1fr;gap:12px}
+  .item-acoes{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+  .ico{width:100%;height:42px}
+
+  /* Barra de publicar: texto em cima, botões dividindo a largura */
+  .pendente{bottom:0;width:100%;justify-content:stretch;border-radius:16px 16px 0 0;border-width:1px 0 0;padding:14px 16px calc(14px + env(safe-area-inset-bottom));display:grid;gap:10px}
+  .pendente span{font-size:14px;text-align:center}
+  .pendente div{display:grid;grid-template-columns:1fr 1.4fr}
+  .pendente .btn{padding:13px 10px}
+
+  /* Formulário em tela cheia na largura */
+  dialog{width:calc(100% - 24px);padding:20px 16px}
   #campos{grid-template-columns:1fr}
   .foto-campo{grid-template-columns:96px 1fr}
   .foto-prev{width:96px}
+  .acoes .btn{flex:1}
+
+  .toast{width:calc(100% - 32px);text-align:center}
 }
