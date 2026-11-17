@@ -1,0 +1,12 @@
+{
+  "usuarios": [
+    {
+      "usuario": "ivan",
+      "salt": "8Ul8z2IBipXxQBlqGc8c3A==",
+      "iv": "CAahjsywSuTBV2qK",
+      "iter": 600000,
+      "token": "ZwjXi/KgM8WuxCClyG6p6RJ13KfQvG4AcMkxejgnIxaCQPG8OPDOhUrL4Mh8rCikrUSc46hjKtITLlxwXLlafb0gnCT5YXofSvC/g3fDeNfrmYvvkrsn9v+w5ygSfLFV2bLz11BUVhWdGrIEQA==",
+      "criado": "2026-11-17"
+    }
+  ]
+}

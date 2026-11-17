@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ivan Motos — Site (Copy)</title>
+<meta name="description" content="Ivan Motos: motos novas e usadas. Fale com a gente pelo WhatsApp, veja o catálogo e venha conhecer a loja.">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="icon" href="assets/logo/simbolo-ivan-motos.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- =========================================================
+     CONFIGURAÇÃO — edite os dados da loja em js/main.js
+     ========================================================= -->
+
+<header class="header" id="top">
+  <div class="wrap nav">
+    <a href="#inicio" class="brand" aria-label="Ivan Motos — início"><img src="assets/logo/logo-ivan-motos-horizontal.svg" alt="Ivan Motos — Motos novas e usadas"></a>
+    <ul class="menu" id="menu">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#sobre">Sobre nós</a></li>
+      <li><a href="#clientes">Clientes</a></li>
+      <li><a href="#localizacao">Localização</a></li>
+      <li class="m-cta"><a class="btn btn-primary js-wa" href="#" data-msg="Olá, Ivan Motos! Vim pelo site e quero mais informações.">Falar no WhatsApp</a></li>
+    </ul>
+    <a class="btn btn-primary js-wa" href="#" data-msg="Olá, Ivan Motos! Vim pelo site e quero mais informações.">
+      <svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg>WhatsApp</a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg" data-speed="0.35"><img src="assets/banner.webp" alt="Fachada da loja Ivan Motos com motos novas expostas"></div>
+  <div class="wrap">
+    <div class="hero-content" data-speed="-0.12">
+      <span class="eyebrow reveal">Motos novas e usadas</span>
+      <h1 class="reveal d1">Sua próxima moto <em>está aqui.</em></h1>
+      <p class="lead reveal d2">Na Ivan Motos você encontra a moto certa para o trabalho, para o dia a dia e para a estrada — com atendimento direto e sem enrolação.</p>
+      <div class="hero-ctas reveal d3">
+        <a class="btn btn-primary js-wa" href="#" data-msg="Olá, Ivan Motos! Vim pelo site e quero ajuda para escolher minha moto.">
+          <svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg>Chamar no WhatsApp</a>
+        <a class="btn btn-ghost" href="#catalogo">Ver catálogo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost js-google" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><use href="#i-google"/></svg>Avalie-nos no Google</a>
+      </div>
+      <div class="hero-badges reveal d3">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z"/></svg>Novas e seminovas revisadas</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Condições facilitadas</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Atendimento rápido</div>
+      </div>
+    </div>
+  </div>
+  <a href="#catalogo" class="scroll-cue" aria-label="Rolar para o catálogo"></a>
+</section>
+
+<div class="strip" aria-hidden="true">
+  <div class="strip-track">
+    <span>Motos novas</span><span>Seminovas</span><span>Condições facilitadas</span><span>Pegamos sua usada</span><span>Atendimento pelo WhatsApp</span><span>Ivan Motos</span>
+    <span>Motos novas</span><span>Seminovas</span><span>Condições facilitadas</span><span>Pegamos sua usada</span><span>Atendimento pelo WhatsApp</span><span>Ivan Motos</span>
+  </div>
+</div>
+
+<!-- CATÁLOGO -->
+<section class="section catalog" id="catalogo">
+  <div class="bigword" data-x="0.25">Catálogo • Catálogo •</div>
+  <div class="wrap" style="position:relative">
+    <div class="cat-top">
+      <div class="section-head reveal">
+        <span class="eyebrow">Catálogo</span>
+        <h2>Escolha a <span>sua moto</span></h2>
+        <p>Toque em “Quero essa” e fale direto com a gente pelo WhatsApp — a mensagem já vai com o modelo escolhido.</p>
+      </div>
+      <div class="filters reveal d1" role="tablist" aria-label="Filtrar motos">
+        <button class="on" data-f="todas">Todas</button>
+        <button data-f="nova">Novas</button>
+        <button data-f="usada">Usadas</button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="cat-foot reveal">
+      <a class="btn btn-ghost js-wa" href="#" data-msg="Olá, Ivan Motos! Quero receber o catálogo completo de motos.">Pedir catálogo completo no WhatsApp
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <p class="note">Fotos ilustrativas. Valores e disponibilidade sujeitos a confirmação na loja.</p>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="section about" id="sobre">
+  <div class="wrap about-grid">
+    <div class="about-wrap reveal">
+      <div class="about-visual">
+        <div class="px" data-speed="0.18"><img src="assets/banner.webp" alt="Loja Ivan Motos"></div>
+        <div class="about-badge">Motos novas e usadas</div>
+      </div>
+      <div class="about-frame"></div>
+    </div>
+    <div class="about-text">
+      <div class="section-head reveal" style="margin-bottom:24px">
+        <span class="eyebrow">Sobre nós</span>
+        <h2>Mais que vender motos, <span>colocar você na pista</span></h2>
+      </div>
+      <p class="reveal d1">A Ivan Motos nasceu da paixão por duas rodas e do compromisso com quem depende da moto para trabalhar, estudar e viver a cidade. Aqui cada cliente é atendido de perto, do primeiro contato até a entrega da chave.</p>
+      <p class="reveal d1">Trabalhamos com motos novas e seminovas selecionadas, com transparência na negociação e as melhores condições para caber no seu bolso.</p>
+      <div class="values">
+        <div class="value reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h4>Procedência</h4><p>Motos verificadas e documentação em dia.</p></div>
+        <div class="value reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div><h4>Atendimento de perto</h4><p>Gente que entende de moto e te ouve.</p></div>
+        <div class="value reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></div><h4>Facilidade</h4><p>Condições de pagamento pensadas pra você.</p></div>
+        <div class="value reveal d3"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div><h4>Troca</h4><p>Avaliamos sua moto usada na negociação.</p></div>
+      </div>
+      <a class="btn btn-primary js-wa reveal" href="#" data-msg="Olá, Ivan Motos! Vim pelo site e quero conhecer a loja.">
+        <svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg>Falar com a equipe</a>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTES -->
+<section class="section clients" id="clientes">
+  <div class="wrap">
+    <div class="section-head center reveal" style="text-align:center">
+      <span class="eyebrow">Clientes Ivan Motos</span>
+      <h2>Quem comprou, <span>aprovou</span></h2>
+      <p>Cada entrega é uma história. Olha só quem já saiu daqui de moto nova.</p>
+    </div>
+  </div>
+  <div class="rails reveal">
+    <div class="rail" id="rail1"></div>
+    <div class="rail rev" id="rail2"></div>
+  </div>
+  <div class="wrap clients-cta reveal">
+    <a class="btn btn-white js-google" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><use href="#i-google"/></svg>Avalie-nos no Google</a>
+    <a class="btn btn-ghost js-insta" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-ig"/></svg>Mais fotos no Instagram</a>
+  </div>
+</section>
+
+<!-- AÇÕES -->
+<section class="section actions" id="contato">
+  <div class="actions-bg" data-speed="0.3"><img src="assets/banner.webp" alt=""></div>
+  <div class="wrap">
+    <div class="section-head center reveal" style="text-align:center">
+      <span class="eyebrow">Fale com a gente</span>
+      <h2>Bora <span>acelerar?</span></h2>
+      <p>Escolha o caminho mais rápido pra você.</p>
+    </div>
+    <div class="cards3">
+      <a class="acard featured js-wa reveal" href="#" data-msg="Olá, Ivan Motos! Vim pelo site e quero mais informações.">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg></div>
+        <h3>WhatsApp</h3>
+        <p>Tire dúvidas, peça valores e simule condições direto com um vendedor.</p>
+        <span class="go">Chamar agora <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="acard reveal d1" href="#catalogo">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
+        <h3>Catálogo</h3>
+        <p>Veja as motos novas e usadas disponíveis e escolha a sua.</p>
+        <span class="go">Ver motos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="acard js-google reveal d2" href="#" target="_blank" rel="noopener">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z"/></svg></div>
+        <h3>Avalie-nos</h3>
+        <div class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-star"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-star"/></svg></div>
+        <p>Comprou com a gente? Deixe sua avaliação no Google — leva menos de um minuto.</p>
+        <span class="go">Avaliar no Google <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+<section class="section location" id="localizacao">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Localização</span>
+      <h2>Venha <span>conhecer a loja</span></h2>
+      <p>Passe aqui para ver as motos de perto, fazer sua avaliação e sair pilotando.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-info reveal">
+        <div class="loc-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><h4>Endereço</h4><p id="addr"></p></div></div>
+        <div class="loc-row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div><h4>Horário</h4><dl class="hours" id="hours"></dl></div></div>
+        <div class="loc-row"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg></div>
+          <div><h4>WhatsApp</h4><p id="phone"></p></div></div>
+        <a class="btn btn-primary js-maps" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>Como chegar</a>
+      </div>
+      <div class="map reveal d1" id="map">
+        <div class="map-art" aria-hidden="true">
+          <svg viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice">
+            <rect width="600" height="420" fill="#141518"/>
+            <g stroke="#202227" stroke-width="1">
+              <path d="M0 60h600M0 140h600M0 230h600M0 330h600M80 0v420M210 0v420M360 0v420M500 0v420"/></g>
+            <g fill="#1a1c20"><rect x="92" y="72" width="104" height="56" rx="6"/><rect x="222" y="72" width="124" height="56" rx="6"/><rect x="372" y="152" width="116" height="66" rx="6"/><rect x="92" y="242" width="104" height="76" rx="6"/><rect x="512" y="242" width="88" height="76" rx="6"/><rect x="222" y="342" width="124" height="78" rx="6"/></g>
+            <path d="M-20 300 C120 260 200 200 300 190 S480 120 640 100" stroke="#2a2c31" stroke-width="22" fill="none" stroke-linecap="round"/>
+            <path d="M-20 300 C120 260 200 200 300 190 S480 120 640 100" stroke="#FF6A00" stroke-opacity=".5" stroke-width="2" stroke-dasharray="10 10" fill="none"/>
+            <path d="M285 0 V420" stroke="#24262b" stroke-width="16"/>
+          </svg>
+        </div>
+        <div class="pin"><div class="pin-dot"><img src="assets/logo/simbolo-ivan-motos-branco.svg" alt=""></div><div class="pin-pulse"></div></div>
+        <div class="map-label"><div><strong>Ivan Motos</strong><br><span id="addr2"></span></div>
+          <a class="btn btn-primary js-maps" href="#" target="_blank" rel="noopener">Abrir no Google Maps</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img class="flogo" src="assets/logo/logo-ivan-motos-horizontal.svg" alt="Ivan Motos">
+        <p>Motos novas e usadas com atendimento de perto e condições que cabem no seu bolso.</p>
+        <div class="social">
+          <a class="js-insta" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-ig"/></svg></a>
+          <a class="js-wa" href="#" data-msg="Olá, Ivan Motos!" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg></a>
+          <a class="js-google" href="#" target="_blank" rel="noopener" aria-label="Avaliar no Google"><svg viewBox="0 0 24 24"><use href="#i-google"/></svg></a>
+        </div>
+      </div>
+      <div><h5>Navegação</h5><ul><li><a href="#inicio">Início</a></li><li><a href="#catalogo">Catálogo</a></li><li><a href="#sobre">Sobre nós</a></li><li><a href="#clientes">Clientes</a></li><li><a href="#localizacao">Localização</a></li></ul></div>
+      <div><h5>Atendimento</h5><ul><li><a class="js-wa" href="#" data-msg="Olá, Ivan Motos!">WhatsApp</a></li><li id="fphone"></li><li><a class="js-google" href="#" target="_blank" rel="noopener">Avalie-nos no Google</a></li></ul></div>
+      <div><h5>Loja</h5><ul><li id="faddr"></li><li><a class="js-maps" href="#" target="_blank" rel="noopener">Como chegar →</a></li></ul></div>
+    </div>
+    <div class="copy"><span>© <span id="yr"></span> Ivan Motos. Todos os direitos reservados.</span><span>Site por <strong>Orbe Digital</strong></span></div>
+  </div>
+</footer>
+
+<a class="fab js-wa" href="#" data-msg="Olá, Ivan Motos! Vim pelo site e quero mais informações." aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg></a>
+
+<!-- Ícones -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm8.4-18.2A11.8 11.8 0 0 0 1.8 17.8L.1 24l6.3-1.7a11.8 11.8 0 0 0 5.6 1.4 11.8 11.8 0 0 0 8.4-20.1z"/></symbol>
+  <symbol id="i-google" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.6 12.3c0-.8-.1-1.6-.2-2.3H12v4.3h5.9a5 5 0 0 1-2.2 3.3v2.8h3.6c2.1-1.9 3.3-4.8 3.3-8.1z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.6-2.8c-1 .7-2.2 1.1-3.7 1.1-2.9 0-5.3-1.9-6.2-4.5H2.1v2.9A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.8 14.1a6.6 6.6 0 0 1 0-4.2V7H2.1a11 11 0 0 0 0 9.9l3.7-2.8z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.2-3.2A11 11 0 0 0 2.1 7l3.7 2.9C6.7 7.3 9.1 5.4 12 5.4z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z"/></symbol>
+</svg>
+
+<script src="js/main.js"></script>
+</body>
+</html>

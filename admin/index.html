@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Painel — Ivan Motos</title>
+<link rel="icon" href="../assets/logo/simbolo-ivan-motos.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<main class="login" id="tela-login">
+  <form class="login-box" id="form-login" autocomplete="on">
+    <img src="../assets/logo/logo-ivan-motos-horizontal.svg" alt="Ivan Motos" class="login-logo">
+    <h1>Painel administrativo</h1>
+    <label>Usuário<input name="usuario" autocomplete="username" required autocapitalize="none"></label>
+    <label>Senha<input name="senha" type="password" autocomplete="current-password" required></label>
+    <p class="erro" id="login-erro" role="alert"></p>
+    <button class="btn btn-primary" type="submit">Entrar</button>
+  </form>
+</main>
+
+<!-- PAINEL -->
+<div class="painel" id="tela-painel" hidden>
+  <header class="topo">
+    <img src="../assets/logo/logo-ivan-motos-horizontal.svg" alt="Ivan Motos" class="topo-logo">
+    <div class="topo-dir">
+      <a href="../" target="_blank" rel="noopener" class="link">Ver site ↗</a>
+      <span class="ola">Olá, <b id="nome-usuario"></b></span>
+      <button class="btn btn-ghost" id="sair">Sair</button>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <div class="barra">
+      <div class="abas" role="tablist">
+        <button role="tab" data-aba="motos" class="on">Catálogo de motos <span id="n-motos"></span></button>
+        <button role="tab" data-aba="clientes">Clientes Ivan Motos <span id="n-clientes"></span></button>
+      </div>
+      <button class="btn btn-primary" id="adicionar">+ Adicionar</button>
+    </div>
+    <p class="dica" id="dica"></p>
+    <div class="lista" id="lista"><p class="vazio">Carregando…</p></div>
+  </main>
+
+  <div class="pendente" id="pendente" hidden>
+    <span>Você tem alterações <b>não publicadas</b>.</span>
+    <div>
+      <button class="btn btn-ghost" id="descartar">Descartar</button>
+      <button class="btn btn-primary" id="publicar">Publicar no site</button>
+    </div>
+  </div>
+</div>
+
+<!-- FORMULÁRIO (adicionar / editar) -->
+<dialog id="dlg">
+  <form id="form-item" method="dialog">
+    <h2 id="dlg-titulo"></h2>
+    <div class="foto-campo">
+      <div class="foto-prev" id="foto-prev"><span>Sem foto</span></div>
+      <label class="btn btn-ghost">Escolher foto<input type="file" accept="image/*" id="foto-input" hidden></label>
+      <small>A foto é reduzida automaticamente antes de enviar.</small>
+    </div>
+    <div id="campos"></div>
+    <p class="erro" id="form-erro" role="alert"></p>
+    <div class="acoes">
+      <button class="btn btn-ghost" type="button" id="cancelar">Cancelar</button>
+      <button class="btn btn-primary" type="submit" value="ok">Salvar</button>
+    </div>
+  </form>
+</dialog>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="admin.js"></script>
+</body>
+</html>
