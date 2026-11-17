@@ -1,3 +1,9 @@
 {
-  "clientes": []
+  "clientes": [
+    {
+      "nome": "Joao",
+      "moto": "Levou uma CG 160",
+      "foto": "assets/clientes/joao-mwl3dopz.webp"
+    }
+  ]
 }

@@ -1,8 +1,54 @@
 {
   "motos": [
-    {"nome": "Honda Pop 110i ES", "tipo": "nova", "ano": "2026", "km": "0 km", "cambio": "4 marchas", "preco": "Consulte", "obs": "Condições especiais", "foto": "assets/motos/pop-110i.webp"},
-    {"nome": "Honda Biz 125", "tipo": "nova", "ano": "2026", "km": "0 km", "cambio": "4 marchas", "preco": "Consulte", "obs": "Entrada facilitada", "foto": "assets/motos/biz-125.webp"},
-    {"nome": "Honda CG 160", "tipo": "nova", "ano": "2026", "km": "0 km", "cambio": "5 marchas", "preco": "Consulte", "obs": "A mais vendida", "foto": "assets/motos/cg-160.webp"},
-    {"nome": "Honda NXR 160 Bros", "tipo": "usada", "ano": "2023", "km": "Revisada", "cambio": "5 marchas", "preco": "Consulte", "obs": "Seminova", "foto": "assets/motos/bros-160.webp"}
+    {
+      "nome": "Honda Pop 110i ES",
+      "tipo": "nova",
+      "ano": "2026",
+      "km": "0 km",
+      "cambio": "4 marchas",
+      "preco": "Consulte",
+      "obs": "Condições especiais",
+      "foto": "assets/motos/pop-110i.webp"
+    },
+    {
+      "nome": "Honda Biz 125",
+      "tipo": "nova",
+      "ano": "2026",
+      "km": "0 km",
+      "cambio": "4 marchas",
+      "preco": "Consulte",
+      "obs": "Entrada facilitada",
+      "foto": "assets/motos/biz-125.webp"
+    },
+    {
+      "nome": "Honda CG 160",
+      "tipo": "nova",
+      "ano": "2026",
+      "km": "0 km",
+      "cambio": "5 marchas",
+      "preco": "Consulte",
+      "obs": "A mais vendida",
+      "foto": "assets/motos/cg-160.webp"
+    },
+    {
+      "nome": "Honda NXR 160 Bros",
+      "tipo": "usada",
+      "ano": "2023",
+      "km": "Revisada",
+      "cambio": "5 marchas",
+      "preco": "Consulte",
+      "obs": "Seminova",
+      "foto": "assets/motos/bros-160.webp"
+    },
+    {
+      "nome": "Bross 2015",
+      "tipo": "nova",
+      "ano": "2015",
+      "km": "70.000",
+      "cambio": "14",
+      "preco": "Consulte",
+      "obs": "",
+      "foto": "assets/motos/bross-2015-mwl3ep5l.webp"
+    }
   ]
 }
