@@ -39,26 +39,6 @@
       "preco": "Consulte",
       "obs": "Seminova",
       "foto": "assets/motos/bros-160.webp"
-    },
-    {
-      "nome": "Bross 2015",
-      "tipo": "nova",
-      "ano": "2015",
-      "km": "70.000",
-      "cambio": "14",
-      "preco": "Consulte",
-      "obs": "",
-      "foto": "assets/motos/bross-2015-mwl3ep5l.webp"
-    },
-    {
-      "nome": "teste kayo",
-      "tipo": "nova",
-      "ano": "2026",
-      "km": "0",
-      "cambio": "6",
-      "preco": "Consulte",
-      "obs": "",
-      "foto": "assets/motos/teste-kayo-mwl3nuvr.webp"
     }
   ]
 }
