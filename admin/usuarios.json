@@ -2,11 +2,11 @@
   "usuarios": [
     {
       "usuario": "ivan",
-      "salt": "8Ul8z2IBipXxQBlqGc8c3A==",
-      "iv": "CAahjsywSuTBV2qK",
+      "salt": "fdtHlsz9YbrAodmVN6vTlw==",
+      "iv": "WJFosCHL/cJEUrOF",
       "iter": 600000,
-      "token": "ZwjXi/KgM8WuxCClyG6p6RJ13KfQvG4AcMkxejgnIxaCQPG8OPDOhUrL4Mh8rCikrUSc46hjKtITLlxwXLlafb0gnCT5YXofSvC/g3fDeNfrmYvvkrsn9v+w5ygSfLFV2bLz11BUVhWdGrIEQA==",
-      "criado": "2026-11-17"
+      "token": "JYdiLlN+Xlbe9Yo4182nTyssZu+MnXGZnuyu0r2LgC4sJz/Ub5lJZMddGl+4R8MRVDgVKfdJIFUqQGTfBoBkeSan83Tru0NcHoC3XiNCEtqGsgMZuoNt79+QOsTHt0QTvbV6O/PLh9JPBryrwg==",
+      "criado": "2026-11-23"
     }
   ]
 }
