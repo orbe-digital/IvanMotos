@@ -15,7 +15,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { webcrypto as crypto } from 'node:crypto';
 
 const ARQUIVO = new URL('../admin/usuarios.json', import.meta.url);
-const REPO = 'orbedigital-sites/IvanMotos';
+const REPO = 'orbe-digital/IvanMotos';
 const ITERACOES = 600000;
 const SENHA_MIN = 12;
 

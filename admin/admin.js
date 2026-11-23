@@ -5,7 +5,7 @@
    - Edição: as mudanças ficam na tela até clicar em "Publicar".
    - Publicar: um único commit com os JSON e as fotos novas.
    ========================================================= */
-const CONFIG = { owner: 'orbedigital-sites', repo: 'IvanMotos', branch: 'main' };
+const CONFIG = { owner: 'orbe-digital', repo: 'IvanMotos', branch: 'main' };
 
 const TIPOS = {
   motos: {
