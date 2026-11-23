@@ -4,6 +4,11 @@
       "nome": "Cliente",
       "moto": "Broz 160",
       "foto": "assets/clientes/cliente-mwtcvgdo.jpg"
+    },
+    {
+      "nome": "Maria",
+      "moto": "Bros 160",
+      "foto": "assets/clientes/maria-mwtekwoo.jpg"
     }
   ]
 }
